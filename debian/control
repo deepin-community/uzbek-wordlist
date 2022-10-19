@@ -1,0 +1,17 @@
+Source: uzbek-wordlist
+Section: text
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 5)
+Build-Depends-Indep: dictionaries-common-dev (>= 1.10.5)
+
+Package: hunspell-uz
+Architecture: all
+Depends: dictionaries-common (>= 0.10), ${misc:Depends}
+Suggests: hunspell, openoffice.org-hunspell | openoffice.org-core (>= 2.0.2)
+Provides: hunspell-dictionary, hunspell-dictionary-uz, openoffice.org-spellcheck-uz
+Conflicts: mozilla-browser (<< 1.8+1.1.1-2), iceape-browser (<< 1.1.1-2), firefox (<< 2.0.0.3-2), thunderbird  (<< 2.0.0.1+0dfsg-0), iceweasel (<< 2.0.0.3-2), icedove (<< 2.0.0.0-4), libxul0d (= 1.8.0.11-3)
+Description: Uzbek dictionary for Hunspell
+ This package contains all the required files to add support
+ for Uzbek language to the Hunspell spell checker
